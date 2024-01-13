@@ -37,7 +37,7 @@ simple way to stylize documentation in their code.
     1. [Development Containers](https://containers.dev/)
     2. [VSCode](https://code.visualstudio.com/)
 2. Languages / Frameworks
-    1. JavaScript / Typescript / NodeJS / [Astro](https://docs.astro.build/en/getting-started/)
+    1. JavaScript / Typescript / NodeJS / [Astro](https://docs.astro.build/en/getting-started/) / [React](https://react.dev/) / [Tailwind](https://tailwindcss.com/)
 
 ...
 

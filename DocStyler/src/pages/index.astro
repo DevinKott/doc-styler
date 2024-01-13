@@ -1,29 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const inputTextAreaID: string = "";
+const placeholderText: string = "Welcome!\n\nTo get started, start replacing this text.\nThe bottom text area will automatically update as you type.";
 ---
 
 <Layout title="DocStyler">
-	<main class="m-auto p-4 leading-relaxed text-xl text-white max-w-[calc(100%_-_2rem)] w-4/5">
-		<span class="text-6xl font-bold text-center mb-4 w-4/5">
+	<main class="m-auto p-4 leading-relaxed text-xl text-white max-w-[calc(100%_-_2rem)] w-4/5 flex flex-col">
+		<span class="text-6xl font-bold text-center my-4 py-4">
 			DocStyler
 		</span>
-		<p>
-			To get started, enter some documentation into the first text area.
-			Your formatted documentation will output in the second text area.
-		</p>
-		<div class="flex flex-col items-center space-y-4 mb-4">
+		<div class="flex justify-center mb-4">
 			<textarea
 				id="input-doc"
-				class="w-full p-2 border rounded-lg text-black"
-				placeholder="Enter documentation..."
+				class="w-3/5 p-2 border rounded-lg text-black"
+				placeholder={placeholderText}
 			></textarea>
 		</div>
-		<div class="flex flex-col items-center space-y-4">
+		<div class="flex justify-center">
 			<textarea
 				id="output-doc"
-				class="w-full p-2 border rounded-lg text-black"
+				class="w-3/5 p-2 border rounded-lg text-black"
 				disabled
 			></textarea>
 		</div>
